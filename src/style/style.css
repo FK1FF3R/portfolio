@@ -3,7 +3,24 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    letter-spacing: 1px;
 }
+
+@font-face {
+    font-family: 'OPTITorry';
+    src: url('../assets/fonts/OPTITorry-Heavy.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'applegaramond';
+    src: url('../assets/fonts/applegaramond.ttf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'OPTITorry-Heavy';
+    src: url('../assets/fonts/OPTITorry-Heavy.ttf.eot') format('opentype');
+  }
+
 
 :root{
     --fundo: #e9e2d0;
@@ -19,6 +36,9 @@
     --cor7: #ada1a4;
     --cor8: #a4948b;
     --cor9: #b9445c;
+    --font: 'OPTITorry';
+    --font2: 'applegaramond';
+    --font3: 'OPTITorry-Heavy';
 }
 
 body{
@@ -85,8 +105,6 @@ body{
     border: solid 3px var(--cor1);
     box-shadow: 4px 4px 0 0 var(--cor1);
     transition: 0.5s;
-    animation: tada;
-    animation-duration: 2s;
 }
 
 #contact:active{
@@ -118,6 +136,20 @@ body{
     flex-direction: column;
     gap: 2rem;
     padding: 2rem 3rem;
+}
+
+#title-description{
+    font-size: 8rem;
+}
+
+.title{
+    color: var(--cor1);
+    font-family: var(--font);
+}
+
+#logo-title{
+    color: var(--cor4);
+    
 }
 
 #my-photo{
