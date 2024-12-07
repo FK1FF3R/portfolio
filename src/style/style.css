@@ -180,24 +180,28 @@ body{
 }
 
 #my-photo,
-.img-stack{
+.img-stack,
+.img-projects{
     width: 100%;
-    height: 100%
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
-#title-stack{
+#title-stack,
+#container-title{
     width: 50%;
-    height: 10%;
+    height: 13%;
     background-color: var(--fundo);
     display: flex;
-    padding: 2.4rem;
     align-items: center;
     justify-content: center;
     border: solid 3px var(--cor-fonte);
     box-shadow: 4px 4px 0 0 var(--cor4);
 }
 
-#stack-article{
+#stack-article,
+.container-projects{
     width: 100%;
     height: 80%;
     display: flex;
@@ -216,12 +220,13 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem 3rem;
+    transition: 0.5s;
 }
 
 .card:hover{
     border: solid 3px var(--cor-fonte);
     box-shadow: 4px 4px 0 0 var(--cor4);
+    transition: 0.5s;
 }
 
 .container-img{
@@ -254,6 +259,86 @@ body{
     height: 0.3rem;
     width: 95%;
     background-color: var(--cor-fonte);
+}
+
+#container-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0 0.5rem;
+}
+
+#title-projects,
+#title-span{
+    width: 50%;
+    height: 90%;
+    background-color: var(--cor-fonte);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-span{
+    background-color: var(--fundo);
+    justify-content: center;
+}
+
+#title-content{
+    color: var(--fundo);
+}
+
+#title-content2{
+    color: var(--cor-fonte);
+}
+
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#container-img-project{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--cor1); */
+}
+
+#container-card-projects{
+    width: 25%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: solid 3px var(--cor-fonte);
+    gap: 0;
+    transition: 0.5s;
+}
+
+#container-card-projects:hover{
+    width: 30%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.img-projects{
+    object-fit: cover;
+}
+
+.title-projects{
+    width: 100%;
+    height: 30%;
+    background-color: var(--cor-fonte);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fundo);
 }
 
 h1{

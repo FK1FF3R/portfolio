@@ -59,3 +59,22 @@ const voltar = () => {
         titulos[i].removeAttribute('style');
     }
 };
+
+
+const redirecionar = () => {
+    const quiz = document.querySelector('.quiz');
+    const crud = document.querySelector('.crud');
+    const donate = document.querySelector('.donate');
+
+    quiz.addEventListener('click', () => {
+        window.location.href = 'https://github.com/FreitasProcopio/Quiz_Squad06';
+    });
+
+    crud.addEventListener('click', () => {
+        window.location.href = 'https://github.com/FK1FF3R/Mini-Projeto-M2';
+    }); 
+
+    donate.addEventListener('click', () => {
+        window.location.href = 'https://github.com/FK1FF3R/DonateHub';
+    })
+}
