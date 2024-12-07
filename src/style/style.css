@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     letter-spacing: 1px;
+    list-style: none;
 }
 
 @font-face {
@@ -84,7 +85,7 @@ body{
 }
 
 .bi{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--fundo);
     transition: .5s;
 }
@@ -178,9 +179,67 @@ body{
     
 }
 
-#my-photo{
+#my-photo,
+.img-stack{
     width: 100%;
     height: 100%
+}
+
+#title-stack{
+    width: 50%;
+    height: 10%;
+    background-color: var(--fundo);
+    display: flex;
+    padding: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px var(--cor-fonte);
+    box-shadow: 4px 4px 0 0 var(--cor4);
+}
+
+#stack-article{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    /* background-color: var(--cor9); */
+}
+
+.card{
+    width: 15%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 3rem;
+}
+
+.card:hover{
+    border: solid 3px var(--cor-fonte);
+    box-shadow: 4px 4px 0 0 var(--cor4);
+}
+
+.container-img{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--cor1); */
+}
+
+#stack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 0;
 }
 
 .separation{
@@ -205,6 +264,46 @@ h1{
 
 p{
     font-size: 1.5rem;
+}
+
+#footer{
+    height: 30vh;
+    width: 100%;
+    border-top: 3px solid var(--cor-fonte);
+    background-color: var(--cor-fonte);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-socials{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#socials-title{
+    color: var(--fundo);
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.socials-icons:hover{
+    color: var(--cor3);
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 @media screen and (max-width: 768px) {

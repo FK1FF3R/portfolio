@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,9 @@
     <header id="header">
         <h1 id="logo-title">Portfolio</h1>
         <nav id="nav-bar">
-            <a href="" class="nav-links">Fcabofiad</a>
-            <a href="" class="nav-links">gdsagdsa</a>
-            <a href="" class="nav-links">gdsagsdaas</a>
+            <a href="#about" class="nav-links">Sobre</a>
+            <a href="#stack" class="nav-links">Stack</a>
+            <a href="#projects" class="nav-links">Projetos</a>
 
             <div class="dark-mode">
                 <i class="bi bi-moon-stars" onclick="mudar()"></i>
@@ -31,9 +31,10 @@
             <article id="description" class="side-article">
                 <h1 id="title-description" class="title">Ola visitantes</h1>
                 <p id="text-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed repudiandae ipsa quo magni molestiae ducimus, optio debitis minus accusantium. Qui, dicta vel quasi ratione nihil laborum provident consequuntur nostrum?
+                    Sou Flaviano, tenho 21 anos e sou desenvolvedor sempre em busca de aprender mais. Minha paixão por tecnologia começou na infância e cresceu nos estudos, onde trabalhei com robótica e automação. Hoje, estudo Análise e Desenvolvimento de Sistemas e faço o curso de Programador Web na DPA, focando em JavaScript, React e Node.js. Curto criar projetos que unam inovação e praticidade, sempre de olho no que há de novo no mercado.
                 </p>
             </article>
+
             <aside id="image" class="side-aside">
                 <img src="./src/assets/imgs/dog.jpg" alt="" id="my-photo">
             </aside>
@@ -43,13 +44,82 @@
             <div id="separation"></div>
         </div>
 
-        
+        <section id="stack" class="section">
+            <h1 class="title" id="title-stack">Minha Stack:</h1>
+            <article id="stack-article">
+                <div class="card">
+                    <div class="container-img">
+                        <img src="./src/assets/imgs/icons8-html-96.png" alt="" class="img-stack">
+                    </div>
+                    <h1 class="cards-title">Html</h1>
+
+                </div>
+
+                <div class="card">
+                    <div class="container-img">
+                        <img src="./src/assets/imgs/icons8-css-filetype-96.png" alt="" class="img-stack">
+                    </div>
+                    <h1 class="cards-title">CSS</h1>
+                </div>
+
+                <div class="card">
+                    <div class="container-img">
+                        <img src="./src/assets/imgs/icons8-javascript-96.png" alt="" class="img-stack">
+                    </div>
+                    <h1 class="cards-title">Javascript</h1>
+                </div>
+
+                <div class="card">
+                    <div class="container-img">
+                        <img src="./src/assets/imgs/icons8-python-96.png" alt="" class="img-stack">
+                    </div>
+                    <h1 class="cards-title">Python</h1>
+                </div>
+
+                <div class="card">
+                    <div class="container-img">
+                        <img src="./src/assets/imgs/icons8-test-passed-96.png" alt="" class="img-stack">
+                    </div>
+                    <h1 class="cards-title">Kanban</h1>
+                </div>
+
+            </article>
+        </section>
+
+        <div class="separation">
+            <div id="separation"></div>
+        </div>
 
         <section id="projects" class="section">
             <h1 id="title-description" class="title">gdfgfdhdfg</h1>
         </section>
 
     </main>
+
+    <footer id="footer">
+        <article class="side-article" id="my-socials">
+            <h1 id="socials-title" class="title">Me acompanhane nas redes:</h1>
+            <ul class="social-media-links">
+                <a href="" class="socials-links"><li class="socials-icons"><i class="bi bi-github"></i></li></a>
+                <a href="" class="socials-links"><li class="socials-icons"><i class="bi bi-linkedin"></i></li></a>
+                <a href="" class="socials-links"><li class="socials-icons"><i class="bi bi-medium"></i></li></a>
+                <a href="" class="socials-links"><li class="socials-icons"><i class="bi bi-twitter-x"></i></li></a>
+            </ul>
+        </article>
+            
+        <aside class="side-aside">
+            <form action="submit" id="contactForm">
+                <h2>Contato</h2>
+                <label for="email">Seu Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Digite sua mensagem" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </aside>
+    </footer>
     <script src="./src/js/script.js"></script>
 </body>
 </html>
