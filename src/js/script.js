@@ -7,6 +7,8 @@ const titulos = document.querySelectorAll('.title');
 const nav = document.querySelector('#nav-bar');
 const navLinks = document.querySelectorAll('.nav-links');
 const btn = document.querySelector('#contact');
+const card = document.querySelectorAll('.card');
+const tittleStack = document.querySelector('#tittle-stack');
 
 // dark.addEventListener('click', () => {
     
@@ -23,6 +25,15 @@ const mudar = () => {
     dark.style.display = 'none';
     light.style.display = 'block';
     light.style.color = 'var(--cor-fonte)';
+    tittleStack.style.color = 'var(--fundo)';
+    tittleStack.style.backgroundColor = 'var(--cor-fonte)';
+    tittleStack.style.border = '3px solid var(--fundo)';
+    
+    
+    for (let i = 0; i < card.lenght; i++) {
+        // card[i].style.border = 'solid 3px var(--fundo)';
+        card[i].style.boxShadow = '4px 4px 0 0 var(--fundo)';
+    }
 
     for(let i = 0; i < navLinks.length; i++){
         navLinks[i].style.color = 'var(--cor-fonte)';
@@ -37,7 +48,7 @@ const mudar = () => {
     }
 
     for(let i = 0; i < titulos.length; i++){    
-        titulos[i].style.color = 'var(--cor4)';
+        titulos[i].style.color = 'var(--red)';
     }
 }
 
@@ -67,14 +78,15 @@ const redirecionar = () => {
     const donate = document.querySelector('.donate');
 
     quiz.addEventListener('click', () => {
-        window.location.href = 'https://github.com/FreitasProcopio/Quiz_Squad06';
+        window.open('https://github.com/FreitasProcopio/Quiz_Squad06', '_blank');
     });
 
     crud.addEventListener('click', () => {
-        window.location.href = 'https://github.com/FK1FF3R/Mini-Projeto-M2';
-    }); 
+        window.open('https://github.com/FK1FF3R/Mini-Projeto-M2', '_blank');
+    });  
 
     donate.addEventListener('click', () => {
-        window.location.href = 'https://github.com/FK1FF3R/DonateHub';
-    })
+        window.open('https://github.com/FK1FF3R/DonateHub', '_blank');
+    });
+    
 }
