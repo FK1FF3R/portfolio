@@ -30,7 +30,7 @@ const mudar = () => {
     tittleStack.style.border = '3px solid var(--fundo)';
     
     
-    for (let i = 0; i < card.lenght; i++) {
+    for (let i = 0; i < card.length; i++) {
         // card[i].style.border = 'solid 3px var(--fundo)';
         card[i].style.boxShadow = '4px 4px 0 0 var(--fundo)';
     }
